@@ -19,33 +19,33 @@ public class FaceEngineTest {
 
     public static void main(String[] args) {
 
-        //ä»å®˜ç½‘è·å–
+        //´Ó¹ÙÍø»ñÈ¡
         String appId = "9Sf3fLtCweqTGAhuNdbZRZdZZeroD6VHwxqszhC4wzzf";
         String sdkKey = "E718szYnWJrunycXd22we64vF9AHff4oUh9LBcoFk54L";
 
 
         FaceEngine faceEngine = new FaceEngine("F:\\HKUST\\MSC_Project\\v3-windows\\ArcsoftVersion3-1\\lib\\WIN64");
-        //æ¿€æ´»å¼•æ“
+        //¼¤»îÒıÇæ
         int errorCode = faceEngine.activeOnline(appId, sdkKey);
 
         if (errorCode != ErrorInfo.MOK.getValue() && errorCode != ErrorInfo.MERR_ASF_ALREADY_ACTIVATED.getValue()) {
-            System.out.println("å¼•æ“æ¿€æ´»å¤±è´¥");
+            System.out.println("ÒıÇæ¼¤»îÊ§°Ü");
         }
 
 
         ActiveFileInfo activeFileInfo=new ActiveFileInfo();
         errorCode = faceEngine.getActiveFileInfo(activeFileInfo);
         if (errorCode != ErrorInfo.MOK.getValue() && errorCode != ErrorInfo.MERR_ASF_ALREADY_ACTIVATED.getValue()) {
-            System.out.println("è·å–æ¿€æ´»æ–‡ä»¶ä¿¡æ¯å¤±è´¥");
+            System.out.println("»ñÈ¡¼¤»îÎÄ¼şĞÅÏ¢Ê§°Ü");
         }
 
-        //å¼•æ“é…ç½®
+        //ÒıÇæÅäÖÃ
         EngineConfiguration engineConfiguration = new EngineConfiguration();
         engineConfiguration.setDetectMode(DetectMode.ASF_DETECT_MODE_IMAGE);
         engineConfiguration.setDetectFaceOrientPriority(DetectOrient.ASF_OP_ALL_OUT);
         engineConfiguration.setDetectFaceMaxNum(10);
         engineConfiguration.setDetectFaceScaleVal(16);
-        //åŠŸèƒ½é…ç½®
+        //¹¦ÄÜÅäÖÃ
         FunctionConfiguration functionConfiguration = new FunctionConfiguration();
         functionConfiguration.setSupportAge(true);
         functionConfiguration.setSupportFace3dAngle(true);
@@ -57,40 +57,40 @@ public class FaceEngineTest {
         engineConfiguration.setFunctionConfiguration(functionConfiguration);
 
 
-        //åˆå§‹åŒ–å¼•æ“
+        //³õÊ¼»¯ÒıÇæ
         errorCode = faceEngine.init(engineConfiguration);
 
         if (errorCode != ErrorInfo.MOK.getValue()) {
-            System.out.println("åˆå§‹åŒ–å¼•æ“å¤±è´¥");
+            System.out.println("³õÊ¼»¯ÒıÇæÊ§°Ü");
         }
 
 
-        //äººè„¸æ£€æµ‹
+        //ÈËÁ³¼ì²â
         ImageInfo imageInfo = getRGBData(new File("pictures/nba/kobe.jpg"));
         List<FaceInfo> faceInfoList = new ArrayList<FaceInfo>();
         errorCode = faceEngine.detectFaces(imageInfo.getImageData(), imageInfo.getWidth(), imageInfo.getHeight(), imageInfo.getImageFormat(), faceInfoList);
         System.out.println(faceInfoList);
 
-        //ç‰¹å¾æå–
+        //ÌØÕ÷ÌáÈ¡
         FaceFeature faceFeature = new FaceFeature();
         errorCode = faceEngine.extractFaceFeature(imageInfo.getImageData(), imageInfo.getWidth(), imageInfo.getHeight(), imageInfo.getImageFormat(), faceInfoList.get(0), faceFeature);
-        System.out.println("ç‰¹å¾å€¼å¤§å°ï¼š" + faceFeature.getFeatureData().length);
+        System.out.println("ÌØÕ÷Öµ´óĞ¡£º" + faceFeature.getFeatureData().length);
 
-        //äººè„¸æ£€æµ‹2
+        //ÈËÁ³¼ì²â2
         ImageInfo imageInfo2 = getRGBData(new File("pictures/nba/kobe and lebron1.jpg"));
         List<FaceInfo> faceInfoList2 = new ArrayList<FaceInfo>();
         errorCode = faceEngine.detectFaces(imageInfo2.getImageData(), imageInfo2.getWidth(), imageInfo2.getHeight(),imageInfo.getImageFormat(), faceInfoList2);
         System.out.println(faceInfoList);
 
-        //ç‰¹å¾æå–2
+        //ÌØÕ÷ÌáÈ¡2
         FaceFeature faceFeature2 = new FaceFeature();
         FaceFeature faceFeature3 = new FaceFeature();
         errorCode = faceEngine.extractFaceFeature(imageInfo2.getImageData(), imageInfo2.getWidth(), imageInfo2.getHeight(), imageInfo.getImageFormat(), faceInfoList2.get(0), faceFeature2);
         errorCode = faceEngine.extractFaceFeature(imageInfo2.getImageData(), imageInfo2.getWidth(), imageInfo2.getHeight(), imageInfo.getImageFormat(), faceInfoList2.get(1), faceFeature3);
-        System.out.println("ç‰¹å¾å€¼1å¤§å°ï¼š" + faceFeature.getFeatureData().length);
-        System.out.println("ç‰¹å¾å€¼2å¤§å°ï¼š" + faceFeature.getFeatureData().length);
+        System.out.println("ÌØÕ÷Öµ1´óĞ¡£º" + faceFeature.getFeatureData().length);
+        System.out.println("ÌØÕ÷Öµ2´óĞ¡£º" + faceFeature.getFeatureData().length);
 
-        //ç‰¹å¾æ¯”å¯¹
+        //ÌØÕ÷±È¶Ô
         FaceFeature targetFaceFeature = new FaceFeature();
         targetFaceFeature.setFeatureData(faceFeature.getFeatureData());
 
@@ -106,13 +106,13 @@ public class FaceEngineTest {
         errorCode = faceEngine.compareFaceFeature(targetFaceFeature, sourceFaceFeature1, faceSimilar);
         errorCode = faceEngine.compareFaceFeature(targetFaceFeature, sourceFaceFeature2, faceSimilar2);
 
-        System.out.println("å›¾1ç›¸ä¼¼åº¦ï¼š" + faceSimilar.getScore());
-        System.out.println("å›¾2ç›¸ä¼¼åº¦ï¼š" + faceSimilar2.getScore());
+        System.out.println("Í¼1ÏàËÆ¶È£º" + faceSimilar.getScore());
+        System.out.println("Í¼2ÏàËÆ¶È£º" + faceSimilar2.getScore());
 
         if(faceSimilar.getScore() > faceSimilar2.getScore()){
-            System.out.println("å›¾1æ˜¯ç§‘æ¯”");
+            System.out.println("Í¼1ÊÇ¿Æ±È");
         }
-        else System.out.println("å›¾2æ˜¯ç§‘æ¯”");
+        else System.out.println("Í¼2ÊÇ¿Æ±È");
 
 
 
@@ -122,9 +122,9 @@ public class FaceEngineTest {
 
 
 
-        //è®¾ç½®æ´»ä½“æµ‹è¯•
+        //ÉèÖÃ»îÌå²âÊÔ
         errorCode = faceEngine.setLivenessParam(0.5f, 0.7f);
-        //äººè„¸å±æ€§æ£€æµ‹
+        //ÈËÁ³ÊôĞÔ¼ì²â
         FunctionConfiguration configuration = new FunctionConfiguration();
         configuration.setSupportAge(true);
         configuration.setSupportFace3dAngle(true);
@@ -133,28 +133,28 @@ public class FaceEngineTest {
         errorCode = faceEngine.process(imageInfo.getImageData(), imageInfo.getWidth(), imageInfo.getHeight(), imageInfo.getImageFormat(), faceInfoList, configuration);
 
 
-        //æ€§åˆ«æ£€æµ‹
+        //ĞÔ±ğ¼ì²â
         List<GenderInfo> genderInfoList = new ArrayList<GenderInfo>();
         errorCode = faceEngine.getGender(genderInfoList);
-        System.out.println("æ€§åˆ«ï¼š" + genderInfoList.get(0).getGender());
+        System.out.println("ĞÔ±ğ£º" + genderInfoList.get(0).getGender());
 
-        //å¹´é¾„æ£€æµ‹
+        //ÄêÁä¼ì²â
         List<AgeInfo> ageInfoList = new ArrayList<AgeInfo>();
         errorCode = faceEngine.getAge(ageInfoList);
-        System.out.println("å¹´é¾„ï¼š" + ageInfoList.get(0).getAge());
+        System.out.println("ÄêÁä£º" + ageInfoList.get(0).getAge());
 
-        //3Dä¿¡æ¯æ£€æµ‹
+        //3DĞÅÏ¢¼ì²â
         List<Face3DAngle> face3DAngleList = new ArrayList<Face3DAngle>();
         errorCode = faceEngine.getFace3DAngle(face3DAngleList);
-        System.out.println("3Dè§’åº¦ï¼š" + face3DAngleList.get(0).getPitch() + "," + face3DAngleList.get(0).getRoll() + "," + face3DAngleList.get(0).getYaw());
+        System.out.println("3D½Ç¶È£º" + face3DAngleList.get(0).getPitch() + "," + face3DAngleList.get(0).getRoll() + "," + face3DAngleList.get(0).getYaw());
 
-        //æ´»ä½“æ£€æµ‹
+        //»îÌå¼ì²â
         List<LivenessInfo> livenessInfoList = new ArrayList<LivenessInfo>();
         errorCode = faceEngine.getLiveness(livenessInfoList);
-        System.out.println("æ´»ä½“ï¼š" + livenessInfoList.get(0).getLiveness());
+        System.out.println("»îÌå£º" + livenessInfoList.get(0).getLiveness());
 
 
-        //IRå±æ€§å¤„ç†
+        //IRÊôĞÔ´¦Àí
         ImageInfo imageInfoGray = getGrayData(new File("d:\\IR_480p.jpg"));
         List<FaceInfo> faceInfoListGray = new ArrayList<FaceInfo>();
         errorCode = faceEngine.detectFaces(imageInfoGray.getImageData(), imageInfoGray.getWidth(), imageInfoGray.getHeight(), imageInfoGray.getImageFormat(), faceInfoListGray);
@@ -162,10 +162,10 @@ public class FaceEngineTest {
         FunctionConfiguration configuration2 = new FunctionConfiguration();
         configuration2.setSupportIRLiveness(true);
         errorCode = faceEngine.processIr(imageInfoGray.getImageData(), imageInfoGray.getWidth(), imageInfoGray.getHeight(), imageInfoGray.getImageFormat(), faceInfoListGray, configuration2);
-        //IRæ´»ä½“æ£€æµ‹
+        //IR»îÌå¼ì²â
         List<IrLivenessInfo> irLivenessInfo = new ArrayList<>();
         errorCode = faceEngine.getLivenessIr(irLivenessInfo);
-        System.out.println("IRæ´»ä½“ï¼š" + irLivenessInfo.get(0).getLiveness());
+        System.out.println("IR»îÌå£º" + irLivenessInfo.get(0).getLiveness());
 
         ImageInfoEx imageInfoEx = new ImageInfoEx();
         imageInfoEx.setHeight(imageInfo.getHeight());
@@ -181,13 +181,13 @@ public class FaceEngineTest {
         errorCode = faceEngine.process(imageInfoEx, faceInfoList1, functionConfiguration);
         List<AgeInfo> ageInfoList1 = new ArrayList<>();
         int age = faceEngine.getAge(ageInfoList1);
-        System.out.println("å¹´é¾„ï¼š" + ageInfoList1.get(0).getAge());
+        System.out.println("ÄêÁä£º" + ageInfoList1.get(0).getAge());
 
         FaceFeature feature = new FaceFeature();
         errorCode = faceEngine.extractFaceFeature(imageInfoEx, faceInfoList1.get(0), feature);
 
 
-        //å¼•æ“å¸è½½
+        //ÒıÇæĞ¶ÔØ
         errorCode = faceEngine.unInit();
     }
 }

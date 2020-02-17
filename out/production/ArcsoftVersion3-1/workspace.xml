@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9760303-8f2f-4975-8d80-01c24c206d4b" name="Default Changelist" comment="" />
+    <list default="true" id="a9760303-8f2f-4975-8d80-01c24c206d4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/WIN64/opencv_java420.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opencv-420.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/META-INF/ArcsoftVersion3-1.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/Test/TestOpencv.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/TestOpencv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArcsoftVersion3-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ArcsoftVersion3-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/Demo/FaceEngineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/Demo/FaceEngineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/Demo/TestReflection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/Demo/TestReflection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArcsoftVersion3-1/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,10 +26,22 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\HKUST\MSC_Project\v3-windows\ArcsoftVersion3-1\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1XZQCop8loHElwGgbzsaFOLbibn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,29 +49,77 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/Test" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.17931035" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\HKUST\MSC_Project\v3-windows\ArcsoftV3\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\HKUST\MSC_Project\v3-windows\ArcsoftVersion3-1\lib\WIN64" />
+      <recent name="F:\HKUST\MSC_Project\v3-windows\ArcsoftVersion3-1\lib" />
+      <recent name="F:\HKUST\MSC_Project\v3-windows\ArcsoftVersion3-1\pictures\nba" />
       <recent name="F:\HKUST\MSC_Project\v3-windows\ArcsoftVersion3-1\pictures" />
       <recent name="F:\HKUST\MSC_Project\v3-windows\ArcsoftVersion3-1\src\Demo" />
-      <recent name="F:\HKUST\MSC_Project\v3-windows\ArcsoftVersion3-1\lib" />
-      <recent name="F:\HKUST\MSC_Project\v3-windows\ArcsoftV3\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Test" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FaceEngineTest">
-    <configuration name="FaceEngineTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TestOpencv">
+    <configuration name="FaceEngineTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Demo.FaceEngineTest" />
       <module name="ArcsoftVersion3-1" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=$PROJECT_DIR$/../ArcsoftVersion3-1\lib\win64" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOpencv (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Test.TestOpencv" />
+      <module name="ArcsoftVersion3-1" />
+      <option name="VM_PARAMETERS" value="Djava.library.path=$PROJECT_DIR$/../ArcsoftVersion3-1\lib\WIN64" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOpencv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.TestOpencv" />
+      <module name="ArcsoftVersion3-1" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=$PROJECT_DIR$/../ArcsoftVersion3-1\lib\win64" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Demo.*" />
@@ -58,6 +133,7 @@
     <configuration name="TestReflection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Demo.TestReflection" />
       <module name="ArcsoftVersion3-1" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=$PROJECT_DIR$/../ArcsoftVersion3-1\lib\WIN64" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Demo.*" />
@@ -68,9 +144,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.FaceEngineTest" />
+      <item itemvalue="Application.TestOpencv" />
+      <item itemvalue="Application.TestReflection" />
+      <item itemvalue="Application.TestOpencv (1)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FaceEngineTest" />
+        <item itemvalue="Application.TestOpencv" />
+        <item itemvalue="Application.TestOpencv (1)" />
         <item itemvalue="Application.TestReflection" />
       </list>
     </recent_temporary>
@@ -99,53 +182,120 @@
       <updated>1581251061812</updated>
       <workItem from="1581251062967" duration="171000" />
       <workItem from="1581470753492" duration="2013000" />
+      <workItem from="1581556382811" duration="10461000" />
+      <workItem from="1581595237083" duration="205000" />
+      <workItem from="1581595454067" duration="1438000" />
+      <workItem from="1581597574548" duration="3317000" />
+      <workItem from="1581943770187" duration="93000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/ArcsoftRe" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1581251185329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1581251185329" />
+    <state x="467" y="81" key="#TestOpencv" timestamp="1581600814823">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="467" y="81" key="#TestOpencv/0.0.1536.824@0.0.1536.824" timestamp="1581600814823" />
+    <state x="278" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581600731096">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="278" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581600731096" />
+    <state x="478" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581597861832">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1581597861832" />
     <state x="389" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581251153766">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="389" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1581251153766" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1581471653636">
+    <state x="599" y="123" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1581599324983">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581471653636" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1581520378582">
+    <state x="599" y="123" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1581599324982" />
+    <state x="318" y="6" key="CommitChangelistDialog2" timestamp="1581598584227">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581520378582" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1581520378581">
+    <state x="318" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581598584227" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1581600894334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581520378581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1581520378581">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1581600894334" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1581600091733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581520378581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1581520378582">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581600091733" />
+    <state width="1493" height="270" key="GridCell.Tab.0.bottom" timestamp="1581600894317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581520378582" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1581252843201">
+    <state width="1493" height="270" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581600894317" />
+    <state width="1493" height="270" key="GridCell.Tab.0.center" timestamp="1581600894317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581252843201" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1581470752990">
+    <state width="1493" height="270" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581600894317" />
+    <state width="1493" height="270" key="GridCell.Tab.0.left" timestamp="1581600894317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581470752990" />
-    <state x="447" y="150" width="642" height="524" key="find.popup" timestamp="1581256489473">
+    <state width="1493" height="270" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581600894317" />
+    <state width="1493" height="270" key="GridCell.Tab.0.right" timestamp="1581600894317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="150" width="642" height="524" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1581256489473" />
+    <state width="1493" height="270" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581600894317" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1581943862208">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581943862208" />
+    <state x="157" y="189" key="chooseDestDirectoryDialog" timestamp="1581600325055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="157" y="189" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1581600325055" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1581597777787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581597777787" />
+    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581600325067">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1581600325067" />
+    <state x="447" y="150" width="642" height="524" key="find.popup" timestamp="1581567845482">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="150" width="642" height="524" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1581567845482" />
+    <state x="477" y="203" key="git4idea.merge.GitPullDialog" timestamp="1581598823499">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1581598823499" />
+    <state x="516" y="312" key="git4idea.ui.GitStashDialog" timestamp="1581598848728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="516" y="312" key="git4idea.ui.GitStashDialog/0.0.1536.824@0.0.1536.824" timestamp="1581598848728" />
+    <state x="491" y="260" key="git4idea.ui.GitUnstashDialog" timestamp="1581598796332">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="260" key="git4idea.ui.GitUnstashDialog/0.0.1536.824@0.0.1536.824" timestamp="1581598796332" />
     <state x="178" y="107" key="new project wizard" timestamp="1581251118301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
